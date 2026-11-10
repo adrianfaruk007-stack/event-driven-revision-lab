@@ -27,6 +27,9 @@ Partial Class Form1
         txtPassword = New TextBox()
         Label1 = New Label()
         Label2 = New Label()
+        btnTest = New Button()
+        lblStatus = New Label()
+        btnRemove = New Button()
         SuspendLayout()
         ' 
         ' btnLogin
@@ -70,11 +73,41 @@ Partial Class Form1
         Label2.TabIndex = 4
         Label2.Text = "Password"
         ' 
+        ' btnTest
+        ' 
+        btnTest.Location = New Point(226, 408)
+        btnTest.Name = "btnTest"
+        btnTest.Size = New Size(94, 29)
+        btnTest.TabIndex = 5
+        btnTest.Text = "Test"
+        btnTest.UseVisualStyleBackColor = True
+        ' 
+        ' lblStatus
+        ' 
+        lblStatus.AutoSize = True
+        lblStatus.Location = New Point(80, 408)
+        lblStatus.Name = "lblStatus"
+        lblStatus.Size = New Size(60, 20)
+        lblStatus.TabIndex = 6
+        lblStatus.Text = "Waiting"
+        ' 
+        ' btnRemove
+        ' 
+        btnRemove.Location = New Point(226, 486)
+        btnRemove.Name = "btnRemove"
+        btnRemove.Size = New Size(94, 29)
+        btnRemove.TabIndex = 7
+        btnRemove.Text = "Remove"
+        btnRemove.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(800, 766)
+        Controls.Add(btnRemove)
+        Controls.Add(lblStatus)
+        Controls.Add(btnTest)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtPassword)
@@ -91,5 +124,8 @@ Partial Class Form1
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents btnTest As Button
+    Friend WithEvents lblStatus As Label
+    Friend WithEvents btnRemove As Button
 
 End Class
